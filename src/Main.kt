@@ -2,19 +2,19 @@ fun main(){
     val question1 = Question<String>(
         "Речка спятила с ума  - По домам пошла сама. ___",
         "Водопровод",
-        "Medium"
+        Difficulty.MEDIUM
     )
     val question2 = Question<Boolean>(
         "Небо зелёное. Правда или ложь",
         false,
-        "easy"
+        Difficulty.EASY
 
 
     )
     val question3 = Question<Int>(
         "Сколько дней между полнолуниями ?",
         28,
-        "hard"
+        Difficulty.HARD
 
     )
     println(question1.answer)
