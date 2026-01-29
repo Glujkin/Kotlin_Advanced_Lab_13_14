@@ -17,7 +17,7 @@ fun main(){
         Difficulty.HARD
 
     )
-    println(question1.answer)
-    println(question2.answer)
-    println(question3.answer)
+    println(question1.toString())
+    println(question2.toString())
+    println(question3.toString())
 }
