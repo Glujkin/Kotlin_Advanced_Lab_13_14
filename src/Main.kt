@@ -12,6 +12,23 @@ class Quiz: ProgressPrintable{
         println()
         println(progressText)
     }
+    fun printQuiz(){
+        question1.let {
+            println(it.quetionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        question2.let {
+            println(it.quetionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        question3.let {
+            println(it.quetionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+    }
     val question1 = Question<String>("Речка спятила с ума  - По домам пошла сама. ___",
         "Водопровод",
         Difficulty.MEDIUM
@@ -32,5 +49,6 @@ class Quiz: ProgressPrintable{
 
 
 fun main(){
-    Quiz().printProgressBar()
+   val quiz = Quiz().apply { printQuiz() }
+
 }
