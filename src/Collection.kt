@@ -12,6 +12,17 @@ val newSolarSystem = arrayOf(
     "Neptune",
     "Pluto"
 )
+
 fun main(){
-    println(newSolarSystem[8])
+    val solarSystem = mutableListOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+    println(solarSystem.size)
+    println(solarSystem[2])
+    println(solarSystem.get(3))
+    println(solarSystem.indexOf("Earth"))
+    println(solarSystem.indexOf("Pluto"))
+    for (planet in solarSystem) {
+        println(planet)
+    }
+    println(solarSystem.contains("Pluto"))
+    println("Future Moon" in solarSystem)
 }
