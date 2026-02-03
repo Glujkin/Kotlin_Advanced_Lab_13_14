@@ -49,11 +49,11 @@ val cookies = listOf(
     )
 )
 fun main() {
-    val fullmenu = cookies.map{
-        "${it.name} - $${it.price}"
+    val softBakedMenu = cookies.filter {
+        it.softBaked
     }
-    println("Полное меню: ")
-    fullmenu.forEach {
-        println(it)
+    println("Мягкое печенье:")
+    softBakedMenu.forEach {
+        println("${it.name} - $${it.price}")
     }
 }
